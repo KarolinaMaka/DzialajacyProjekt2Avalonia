@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+		Width="500"
+		Height="250"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaJeden.Views.Error"
+        Title="Error">
+	<Window.Styles>
+		<Style Selector="Button.b3">
+			<Setter Property="FontFamily" Value="Century Gothic"/>
+			<Setter Property="FontSize" Value="18"/>
+			<Setter Property="Background" Value="Gold"/>
+			<Setter Property="CornerRadius" Value="10"/>
+			<Setter Property="Margin" Value="5"/>
+			<Setter Property="Padding" Value="10"/>
+		</Style>
+	</Window.Styles>
+
+	<Grid Grid.ColumnDefinitions="100,300,100" Grid.RowDefinitions="*,*,*,*">
+		
+		<TextBox Grid.Column="1" Grid.Row="1" FontFamily="Century Gothic" FontSize="18" Text="Nieprawidłowy format danych!" BorderBrush="White"></TextBox>
+		<Button Grid.Column="1" Grid.Row="2" Classes="b3" Content="Już zmieniam!" HorizontalAlignment="Center" Click="error_Click" ></Button>
+	</Grid>
+
+</Window>
